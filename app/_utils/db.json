@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Learn Next.js",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Build To Do App",
+      "completed": true
+    },
+    {
+      "id": "5431",
+      "title": "Makanan",
+      "completed": false
+    },
+    {
+      "id": "6ff4",
+      "title": "Minum",
+      "completed": true
+    }
+  ]
+}
