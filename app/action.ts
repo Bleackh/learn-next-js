@@ -3,6 +3,7 @@
 // import { revalidatePath } from "next/cache"
 import { revalidateTag } from "next/cache"
 import { z } from "zod"
+import { v4 as uuidv4 } from "uuid";
 
 export async function create(state: unknown, formData: FormData) {
     const schema = z.object({
@@ -17,7 +18,7 @@ export async function create(state: unknown, formData: FormData) {
         return { message: parsedData.error.errors[0].message }
     }
 
-    const data = parsedData.data
+    const id = uuidv4(); // Panggil uuidv4 untuk menghasilkan ID unik
 
     const rest = await fetch(process.env.NEXT_PUBLIC_API as string, {
         method: "POST",
@@ -25,7 +26,8 @@ export async function create(state: unknown, formData: FormData) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            ...data,
+            id: id, // Gunakan UUID yang dihasilkan
+            title: formData.get('title'),
             completed: false,
         })
     })

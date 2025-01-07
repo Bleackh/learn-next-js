@@ -8,7 +8,7 @@
     {
       "id": "2",
       "title": "Build To Do App",
-      "completed": true
+      "completed": false
     },
     {
       "id": "5431",
@@ -18,7 +18,22 @@
     {
       "id": "6ff4",
       "title": "Minum",
-      "completed": true
+      "completed": false
+    },
+    {
+      "id": "7cc3",
+      "title": "Rumah",
+      "completed": false
+    },
+    {
+      "id": "9f21",
+      "title": "Seragam",
+      "completed": false
+    },
+    {
+      "id": "dc460263-fac9-45c6-a750-548208518b9c",
+      "title": "Okee!",
+      "completed": false
     }
   ]
 }
